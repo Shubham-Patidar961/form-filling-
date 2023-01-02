@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>greade calculater</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>greade calculating syastem</h1>
+      </header>
+      <section>
+        <div class="contener">
+          <div class="section-1">
+            <label for="">computer</label>
+            <br />
+            <input id="computer" type="number" placeholder="--marks---" />
+            <br />
+            <label for="">english</label>
+            <br />
+            <input id="english" type="number" placeholder="--marks---" />
+            <br />
+            <label for="">physices</label>
+            <br />
+            <input id="physices" type="number" placeholder="--marks---" />
+            <br />
+            <label for="">chemestry</label>
+            <br />
+            <input id="chemestry" type="number" placeholder="--marks---" />
+            <br />
+            <label for="">math</label>
+            <br />
+            <input id="math" type="number" placeholder="--marks---" />
+            <br />
+            <br />
+            <button onclick="calculate()">claculate</button>
+            <br />
+          </div>
+          <div class="section-2">
+            <div class="center">
+              <table>
+                <tr>
+                  <td>toatl makas</td>
+                  <td>500</td>
+                </tr>
+                <tr>
+                  <td>obtaned marks</td>
+                  <td id="onbtainmarks"></td>
+                </tr>
+                <tr>
+                  <td>percentage</td>
+                  <td id="prcentage"></td>
+                </tr>
+                <tr>
+                  <td>greade</td>
+                  <td id="grede"></td>
+                </tr>
+                <tr>
+                  <td>remarks</td>
+                  <td id="remarks"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
