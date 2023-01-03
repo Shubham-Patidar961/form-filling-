@@ -5,6 +5,10 @@ function calculate() {
   var c = parseInt(document.querySelector("#physices").value);
   var d = parseInt(document.querySelector("#chemestry").value);
   var e = parseInt(document.querySelector("#math").value);
+  var obtanimarks = document.querySelector("#onbtainmarks");
+  var remark = document.querySelector("#remarks");
+  var grede = document.querySelector("#grede");
+  var parcentge = document.querySelector("#prcentage");
   // -- end of variable declaration--//
   var sum = a + b + c + d + e;
   if (
@@ -22,15 +26,12 @@ function calculate() {
     alert("plese return a valid input");
   } else {
     // -- sum calculation --//
-    var obtanimarks = document.querySelector("#onbtainmarks");
     obtanimarks.innerHTML = sum;
     // -- prcentage calculter --//
-    var prcentage = (sum / 500) * 100;
-    var parcentge = document.querySelector("#prcentage");
+    var prcentage = Number((sum / 500) * 100);
     parcentge.innerHTML = prcentage;
     // -- grde -- //
     if (prcentage >= 0 && prcentage <= 33) {
-      var grede = document.querySelector("#grede");
       grede.innerHTML = "C";
     }
     if (prcentage >= 34 && prcentage <= 75) {
@@ -42,7 +43,6 @@ function calculate() {
   }
   // --remarks --//
   if (prcentage >= 0 && prcentage < 33) {
-    var remark = document.querySelector("#remarks");
     remark.innerHTML = "FAIL";
   } else {
     remark.innerHTML = "PASS";
